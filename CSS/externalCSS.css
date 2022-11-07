@@ -1,0 +1,31 @@
+nav, header, main, footer{
+    border-style:solid;
+    margin: 10px;}
+nav{
+    background-color: aqua;
+    
+} /* the comment for external is same as embedded CSS*/
+Footer{
+    text-align: center;
+    font-weight: bold;
+}
+nav a{
+    float: right; /* the float moves the first box than the second etc so the order is reversed*/
+    display: block;
+    border-style: outset;
+    margin: 10px 5px;
+    padding: 5px;;
+}
+
+a:hover{
+    color: brown;
+}
+a:link{
+    color:red;
+}
+a:visited{
+   color: blue;
+}
+a:active{
+    color: pink;
+}

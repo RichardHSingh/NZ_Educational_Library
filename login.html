@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/loginExternalCSS.css">
+    <script type="text/Javascript">
+
+        function validation()
+
+   {    var userName, password;
+            userName = document.login.textUserName.value;
+            password = document.login.textPassword.value;    
+        
+        if (userName != "admin")
+        {
+            window.alert("Please enter the username correctly!");
+            return false;
+        }
+        else if (password != "abc123")
+        {
+            window.alert ("Please enter the password correctly!");
+            return false;
+        }
+        else
+        {
+            window.alert ("Welcome Senpai!");
+            return true;
+        }
+    }
+    </script>
+
+    <style type="text/css">
+       /* body{
+            background-image: url('Images2/background2.jpg');
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-position: center;
+            background-size: 100% 100%;
+            color: rgb(245, 245, 245);
+        }*/
+        body{
+            background-color: whitesmoke;
+            color: black;
+        }
+        td{
+           font-weight: bold;
+           color: rgb(0, 0, 0);
+           padding: 5px;
+           margin: 10px;
+           
+        }
+      
+        .button2:hover{
+        box-shadow: 0 12px 16px 0 rgb(28, 180, 173), 0 17px 50px 0 rgb(28, 180, 173);
+        
+       }
+
+       input{
+            border-radius: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 15px;
+            color: rgb(75, 75, 75);
+            border-color: rgb(102, 107, 93);
+       }
+
+       .inputbox{
+           outline-color: rgb(28, 180, 173);
+       }
+
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .submit{
+        background-color: rgb(9, 83, 67);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        padding: 10px 30px;
+        font-size: 15px;
+        cursor: pointer;
+        }
+
+        
+ </style>
+
+</head>
+
+<body>
+    <nav>
+    </nav>
+    
+    <header>
+        <h3 id="top" style="text-align:left; position: absolute; "><i>Kia Ora Aoteaora </i><br>No Mai Haere Mai Ki Te Wharepukapuka ō Mahaki<br><i>
+            "Welcome to Mahaki's Library"</i></h3>
+        <h1 style="text-align:center;">Takiuru<i>&nbsp;"Login"</i></h1>
+    </header>
+    <main>
+        <div>
+            <img scr="Images2/Logo.jpg" width="300px" height="300px" style="border-radius:60%; margin-left:480px; margin-top: 130px; position: fixed;">
+            <div style="width:50px; position:relative;  left:800px; top: 200px;">
+            <table width= "75%">
+                <form name="login" method="post" action="admin.html" onsubmit="return validation();">
+
+                <tr class="tr">
+                        <td>Username<span style="color: red;">*</span><br>
+                        <input class="inputbox" name="textUserName" type="text" size="40" required></td>      
+                </tr>
+                <tr>
+                        <td>Password<span style="color: red;">*</span><br>
+                        <input class="inputbox" name="textPassword" type="password" size="40" maxlength="50" required></td>
+                    
+                </tr>
+                <tr>
+                        <td style="font-size: 12px;"><span style="color: red;">*</span>indicates required field</td>
+                </tr>
+                <tr>
+                        <td><input class="button2 submit" type="submit" value="Login" name="submitbutn"></td>
+                </tr>
+                </form>
+
+        </div></div>
+    </table>
+    </main>
+    <footer>
+        <p>Copyright&copy; <script> document.write(new Date().getFullYear());</script>, Wharepukapuka ō Mahaki</p>
+        <p>All Rights Reserved</p>
+    </footer>
+</body>
+</html>

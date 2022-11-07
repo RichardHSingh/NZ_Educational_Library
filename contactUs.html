@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/contactUsExternal.css">
+
+    <style type="text/css">
+        td{
+           font-weight: bold;
+           color: rgb(110, 109, 109);
+           padding-bottom: 5px;
+       }
+       h1{
+           /*margin-left: 200px;
+           margin-top: 0px;
+           font-size: 50px;
+           /*padding-bottom: 0px;*/
+       }
+        .button2:hover{
+        box-shadow: 0 12px 16px 0 rgb(28, 180, 173), 0 17px 50px 0 rgb(28, 180, 173);
+       }
+       input{
+            border-radius: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 15px;
+            color: rgb(75, 75, 75);
+            border-color: rgb(102, 107, 93);
+       }
+       textarea{
+            border-radius: 5px;
+            font-size: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            
+       }
+       .inputbox{
+           outline-color: rgb(28, 180, 173);
+       }
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+    <br> 
+<body>
+    <nav>
+        <p style="text-align:left; margin-left: 140px; margin-top:20px; position: absolute;"><i>Kia Ora Aoteatora </i><br>No Mai Haere Mai Mahaki's Whare Pukapuka</p>
+        <img src="Images2/Logo.jpg" width="120px" height="120px" style="border-radius:60%;">
+        <a href= "contactUs.html" target="_blank">CONTACT US</a>
+        <a href= "login.html" target="_blank" >LOGIN</a> 
+        <a href= "services.html" target="_blank" >SERVICES</a>
+        <a href= "index.html" target="_blank" >HOME</a>
+                
+    </nav>
+
+    <header>
+        <h1 style="text-align:center;">Tono mai Kia mātou<i>&nbsp;- Contact Us</i>
+            <br>
+        Kei konei mātou hei awhina<i>&nbsp;- We are here to help!</i></h1>
+    </header>
+          
+          
+
+    <main> 
+        <div>
+          
+             <img src="Images2/korupiko.jpg" width="280px" height="450px" style="margin: 100px 0px 100px 400px; position: fixed;">
+        <div style="width:50px; position:relative;  left:700px; top: 90px;">
+        <table width= "75%">    <!--"margin-left:400px; margin-top: 100px; position: fixed-->
+                 
+        <form method="post" action="" name="contactUs">
+            <tr>
+                <td>First Name<span style="color: red;">*</span><br>
+                    <input class="inputbox" name="fName" size="50"  type="text" required></td>
+           </tr>
+           <tr>
+                <td>Last Name<span style="color: red;">*</span><br>
+                <input class="inputbox" name="lName" size="50"  type="text" required></td>
+            </tr>
+            <tr>
+                <td>Email<span style="color: red;">*</span><br>
+                <input  class="inputbox" name="email" type="email"  size="50" maxlength="50"  required></td>
+            </tr>
+            <tr>
+                <td>Contact Phone<br>
+                <input class="inputbox" name="phone" type="phone" size="50" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Subject<span style="color: red;">*</span><br>
+                <input class="inputbox" name="subject" type="text" size="50" maxlength="50"  required></td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                <label for="details">Details<span style="color: red;">*</span><br>
+                <textarea class="inputbox" name="details" cols="50" rows="5" id="details" maxlength="500" required></textarea></td>
+            </tr>
+            <tr>
+                <td style="font-size: 12px; color: black"><span style="color: red;">*</span>indicates required field</td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="button2" onclick="window.alert('Hi, your message has been sent');">Send</button>
+                </td>
+            </tr>
+        </form>
+        </table>
+        </div></div>
+    </main>
+
+    <footer>
+        <p>Copyright&copy; <script> document.write(new Date().getFullYear());</script>, Mahaki's Whare Pukapuka</p>
+        <p>All Rights Reserved</p>
+     </footer>
+</body>
+</html>
